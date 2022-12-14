@@ -1,0 +1,24 @@
+Ex.:
+pós-fixa: 1 2 - 4 5 + *
+normal: (1 - 2) * (4 + 5)
+
+sequencia:
+operando(c, 1) // 1
+operando(c, 2) // 2
+operador(c, '-') // (1 - 2)
+operando(c, 4) // (1 - 2) 4
+operando(c, 5) // (1 - 2) 4 5
+operador(c, '+') // (1 - 2) (4 + 5)
+operador(c, '*') // (1 - 2) * (4 + 5)
+
+pseudocódigo:
+operando(c, valor) {
+	// coloque o valor ao final da EDD de c
+}
+
+operador(c, op) {
+	/*
+	* pegue os dois ultimos operandos da EDD de c, agrupe-os (efetivamente
+	* tornando-os um único operando) e use o operador op entre eles
+	*/
+}
